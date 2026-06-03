@@ -5,12 +5,16 @@ export default function Home() {
   return (
     <section className="page hero">
       <div className="hero-content">
-        <p className="hero-greeting">Hello, I'm</p>
-        <h1>Elyas Yenealem</h1>
-        <p className="hero-sub">Frontend Developer &amp; React Enthusiast</p>
+        <p className="hero-greeting">Welcome to my portfolio</p>
+        <h1>
+          I'm <span>Elyas</span><br />Yenealem
+        </h1>
+        <p className="hero-sub">
+          <strong>Frontend Developer</strong> &amp; React Enthusiast
+        </p>
         <p className="hero-desc">
-          I build clean, responsive, and user-friendly web experiences.
-          Passionate about modern UI and great code.
+          I craft clean, responsive, and user-friendly web experiences.
+          Passionate about modern UI design and writing great code.
         </p>
         <div className="hero-btns">
           <Link to="/projects"><Button>View My Work</Button></Link>
