@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ThemeProvider, useTheme } from "./context/ThemeContext";
+import { ThemeProvider } from "./context/ThemeContext";
+import { useTheme } from "./hooks/useTheme";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -10,9 +11,6 @@ import Contact from "./pages/Contact";
 
 function Layout() {
   const { dark } = useTheme();
-
-  // Apply dark class to document root so body bg is also covered
-  document.documentElement.className = dark ? "dark" : "";
 
   return (
     <div className={dark ? "app dark" : "app"}>
